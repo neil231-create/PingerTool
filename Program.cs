@@ -27,6 +27,8 @@ namespace PingerTool
             {
                 Console.WriteLine($"Response: {reply.Status}");
                 Console.WriteLine($"Roundtrip: {reply.RoundtripTime}");
+                Console.WriteLine($"Time to live: {reply.Options.Ttl}");
+                Console.WriteLine($"Buffer size: {reply.Buffer.Length}");
             }
 
 
